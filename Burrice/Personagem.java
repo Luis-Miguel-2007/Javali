@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Personagem {
     String nome;
     int vida;
@@ -29,7 +31,14 @@ public void setNome (String nome){
         Personagem person_2 = new Personagem ("Batman", 2, "Orfao", "Dinheiro");
 
         List<Personagem> personagens;
-        personagens.add(person_1)
-        personagens.add(person_2)
+        personagens.add(
+        new Personagem ("Ben 10", 100, "Mutante", "transformar");
+        new Personagem ("Batman", 2, "Orfao", "Dinheiro");
+        );
+
+        for (Personagem persona : personagens) {
+System.out.println("Nome: " + persona);
+
+        }
     };
 }
